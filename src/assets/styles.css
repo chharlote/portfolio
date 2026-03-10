@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --rose: #e8a0ad;
+    --rose-dark: #c97c8a;
+    --fond: #fff7f9;
+}
