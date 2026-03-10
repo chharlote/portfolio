@@ -1,6 +1,6 @@
 <template>
-  <section class="home-projects">
-    <h2>Quelques-uns de mes projets</h2>
+  <section id="projets" class="home-projects">
+    <h2>Mes projets</h2>
 
     <div class="projects-grid">
 
@@ -36,7 +36,7 @@
 }
 
 .home-projects h2 {
-  color: var(--rose-dark); /* Utilise la variable de ton styles.css */
+  color: var(--rose-dark);
   margin-bottom: 40px;
   font-size: 32px;
 }
@@ -44,32 +44,29 @@
 .projects-grid {
   display: flex;
   justify-content: center;
-  gap: 30px; /* Espace entre les cartes */
-  flex-wrap: wrap; /* Permet de passer à la ligne sur les petits écrans */
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-/* --- Le style de la carte --- */
+
 .project-card {
   background: white;
   width: 300px;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Ombre douce */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  /* C'est ici que la magie de l'animation opère : */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* L'effet de zoom (grossissement) au passage de la souris ! */
 .project-card:hover {
-  transform: scale(1.05); /* Grossit la carte de 5% */
-  box-shadow: 0 10px 25px rgba(201, 124, 138, 0.2); /* Accentue l'ombre en rose */
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(201, 124, 138, 0.2);
 }
 
-/* --- L'image (en attendant tes vraies images) --- */
 .img-placeholder {
   width: 100%;
   height: 160px;

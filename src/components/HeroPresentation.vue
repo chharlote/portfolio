@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section id="accueil" class="hero">
     <div class="hero-text">
       <span class="subtitle">Développeuse back-end</span>
 

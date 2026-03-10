@@ -3,12 +3,11 @@
     <h1 class="logo">Charlotte</h1>
 
     <div class="links">
-      <router-link to="/">Accueil</router-link>
-      <router-link to="/projects">Projets</router-link>
+      <a href="#accueil">Accueil</a>
+      <a href="#projets">Projets</a>
     </div>
   </nav>
 </template>
-
 <style scoped>
 .navbar {
   display: flex;
@@ -22,6 +21,9 @@
 
 
   box-shadow: 0 4px 15px rgba(201, 124, 138, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
 }
 
