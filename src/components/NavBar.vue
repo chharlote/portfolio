@@ -15,7 +15,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 60px;
-  background: #fff7f9;
+  /*background: var(--fond);*/
+  background: var(--fond-element);
+  width: 100%;
+  box-sizing: border-box;
+
+
+  box-shadow: 0 4px 15px rgba(201, 124, 138, 0.15);
+
 }
 
 .logo {

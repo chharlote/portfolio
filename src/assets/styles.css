@@ -1,10 +1,16 @@
+:root {
+    --rose: #e8a0ad;
+    --rose-dark: #c97c8a;
+
+    --fond-page: #f8f9fa;
+    --fond-element: #ffffff;
+    --texte-principal: #2c3e50;
+    --texte-secondaire: #6c757d;
+}
+
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
-}
-
-:root{
-    --rose: #e8a0ad;
-    --rose-dark: #c97c8a;
-    --fond: #fff7f9;
+    background-color: var(--fond-page);
+    color: var(--texte-principal);
 }
