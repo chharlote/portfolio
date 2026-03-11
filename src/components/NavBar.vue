@@ -5,6 +5,9 @@
     <div class="links">
       <a href="#accueil">Accueil</a>
       <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+
     </div>
   </nav>
 </template>
@@ -46,3 +49,5 @@
 
 
 </style>
+<script setup lang="ts">
+</script>
