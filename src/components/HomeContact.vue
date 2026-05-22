@@ -54,14 +54,6 @@
 
     </form>
 
-    <div class="social-links">
-      <a href="https://linkedin.com/in/votre-profil" target="_blank" class="social-btn">
-        💼 LinkedIn
-      </a>
-      <a href="https://github.com/votre-pseudo" target="_blank" class="social-btn">
-        💻 GitHub
-      </a>
-    </div>
   </section>
 </template>
 
@@ -220,30 +212,4 @@ const envoyerMessage = async () => {
   transform: translateY(-2px);
 }
 
-.social-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.social-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background-color: var(--fond-element);
-  color: var(--texte-principal);
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.social-btn:hover {
-  border-color: var(--rose);
-  color: var(--rose-dark);
-  transform: scale(1.05);
-}
 </style>

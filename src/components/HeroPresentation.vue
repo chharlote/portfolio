@@ -10,6 +10,17 @@
         De la conception à l'intégration, j'aime résoudre des problèmes techniques
         et donner vie à des projets ambitieux.
       </p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/votre-profil" target="_blank" class="social-btn">
+          💼 LinkedIn
+        </a>
+        <a href="https://github.com/votre-pseudo" target="_blank" class="social-btn">
+          💻 GitHub
+        </a>
+        <a href="../../public/cv_c_germe.pdf" target="_blank" class="social-btn">
+          📄 Mon CV
+        </a>
+      </div>
 
       <div class="tech-stack">
         <h3>Mes technos préférées :</h3>
@@ -136,5 +147,32 @@
   width: 250px;
   border-radius: 50%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: var(--fond-element);
+  color: var(--texte-principal);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+  border-color: var(--rose);
+  color: var(--rose-dark);
+  transform: scale(1.05);
 }
 </style>
