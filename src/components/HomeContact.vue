@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="contact-section">
-    <h2>Travaillons ensemble</h2>
+    <h2>Me contacter</h2>
 
     <p class="contact-text">
       Une question, une proposition ou simplement envie de discuter code ? <br>

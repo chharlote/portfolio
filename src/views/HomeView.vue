@@ -12,8 +12,8 @@ import SiteFooter from '../components/SiteFooter.vue'
   <div>
     <Navbar />
     <HeroPresentation />
-    <HomeProjects />
     <HomeParcours />
+    <HomeProjects />
     <HardSkills />
     <HomeContact />
     <SiteFooter />

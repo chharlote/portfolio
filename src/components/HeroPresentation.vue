@@ -1,68 +1,76 @@
 <template>
   <section id="accueil" class="hero">
-    <div class="hero-text">
+
+    <div class="hero-header">
       <span class="subtitle">Développeuse back-end</span>
-
       <h1>Bonjour, moi c'est Charlotte</h1>
+    </div>
 
-      <p class="description">
-        Je conçois et développe des applications web modernes et intuitives.
-        De la conception à l'intégration, j'aime résoudre des problèmes techniques
-        et donner vie à des projets ambitieux.
-      </p>
+    <div class="hero-intro">
+      <div class="hero-image">
+        <img src="/img/charlotte_portfolio.jpg" alt="photo profil">
+      </div>
+
+      <div class="hero-description">
+        <p>
+          Bonjour, je suis Charlotte, développeuse logicielle passionnée, actuellement en alternance. <br><br>
+          Forte de mes expériences dans la création d'applications web et de systèmes back-end, j'attache une grande importance
+          à la création d'un code propre, sécurisé et respectueux des conventions de développement.<br>
+          J'aime relever des défis techniques en équipe lors d'événements comme la Nuit de l'Info.
+          <br><br> Mon socle technique s'étend sur plusieurs domaines, incluant le développement Back-end (Java/SpringBoot, Node.js), l'architecture de bases de données
+          (PostgreSQL) et la création d'interfaces Front-end (Vue.js). La majorité de mon code source est d'ailleurs accessible sur mon profil GitHub.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+
       <div class="social-links">
-        <a href="https://linkedin.com/in/votre-profil" target="_blank" class="social-btn">
-          💼 LinkedIn
+
+        <a href="https://www.linkedin.com/in/charlotte-germea600081a4/" target="_blank" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          LinkedIn
         </a>
-        <a href="https://github.com/votre-pseudo" target="_blank" class="social-btn">
-          💻 GitHub
+
+        <a href="https://github.com/chharlote" target="_blank" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3-.3 6-1.5 6-6.5a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 5 3 6.2 6 6.5a4.8 4.8 0 0 0-1 3.2v4"></path></svg>
+          GitHub
         </a>
-        <a href="../../public/cv_c_germe.pdf" target="_blank" class="social-btn">
-          📄 Mon CV
+
+        <a href="/cv_c_germe.pdf" target="_blank" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Mon CV
         </a>
+
       </div>
 
-      <div class="tech-stack">
-        <h3>Mes technos préférées :</h3>
-        <div class="badges">
-          <span class="badge">Vue.js</span>
-          <span class="badge">JavaScript</span>
-          <span class="badge">TypeScript</span>
-          <span class="badge">HTML & CSS</span>
-          <span class="badge">Git</span>
-        </div>
-      </div>
 
-      <router-link to="/projects" class="btn">
-        Voir mes projets
-      </router-link>
+     <a href="#projets" class="btn"> Voir mes projets</a>
+
+
+
+
     </div>
 
-    <div class="hero-image">
-      <img src="../assets/img/homeview.png" alt="photo profil">
-    </div>
   </section>
 </template>
 
 <style scoped>
-
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
+  max-width: 1000px; /* Un peu réduit pour que le texte ne soit pas trop étiré */
+  margin: 0 auto;
+}
+
+/* --- 1. En-tête centré --- */
+.hero-header {
   text-align: center;
+  margin-bottom: 50px;
 }
 
-.hero-text {
-  max-width: 650px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* --- Typographie --- */
 .subtitle {
   color: var(--rose-dark);
   font-weight: 600;
@@ -71,23 +79,96 @@
   font-size: 14px;
 }
 
-.hero h1 {
+.hero-header h1 {
   font-size: 42px;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: var(--texte-principal);
 }
 
-.description {
+/* --- 2. Image et Description (Côte à côte) --- */
+.hero-intro {
+  display: flex;
+  flex-direction: row; /* Aligne l'image et le texte horizontalement */
+  align-items: center;
+  gap: 50px; /* Espace entre l'image et le texte */
+  margin-bottom: 50px; /* Espace avant la suite */
+}
+
+.hero-image {
+  flex-shrink: 0;
+}
+
+.hero-image img {
+  width: 250px;
+  border-radius: 20%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
+
+.hero-description {
+  max-width: 600px;
+  text-align: left; /* Le texte reste aligné à gauche pour la lecture */
+}
+
+.hero-description p {
   font-size: 18px;
   line-height: 1.6;
   color: var(--texte-secondaire);
-  margin-bottom: 35px;
+  margin: 0; /* Enlève les marges par défaut pour un meilleur alignement */
 }
 
-.tech-stack {
-  margin-bottom: 35px;
+/* --- 3. Actions centrées (Boutons, Badges) --- */
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre tout le contenu de cette zone */
+  width: 100%;
 }
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre les boutons sociaux */
+  margin-bottom: 40px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre les boutons */
+  margin-bottom: 40px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace entre le logo SVG et le texte */
+  background-color: transparent; /* Fond transparent */
+  color: var(--rose);
+  border: 2px solid var(--rose); /* Bordure colorée */
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* On s'assure que le SVG prend la couleur du texte */
+.social-btn svg {
+  stroke: currentColor;
+}
+
+/* Le même effet de survol que sur les projets */
+.social-btn:hover {
+  background-color: var(--rose);
+  color: white; /* Le texte et le logo deviennent blancs */
+  transform: scale(1.05);
+}
+
 
 .tech-stack h3 {
   font-size: 16px;
@@ -96,30 +177,6 @@
   font-weight: 500;
 }
 
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.badge {
-  background-color: var(--fond-element, #ffffff);
-  color: var(--rose-dark);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  border: 1px solid var(--rose);
-  transition: all 0.3s ease;
-}
-
-.badge:hover {
-  background-color: var(--rose);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(232, 160, 173, 0.3);
-}
 
 .btn {
   display: inline-block;
@@ -138,41 +195,16 @@
   transform: scale(1.05);
 }
 
-/* --- Image --- */
-.hero-image {
-  margin-top: 40px;
-}
+/* --- Responsive (Tablettes et Mobiles) --- */
+@media (max-width: 850px) {
+  .hero-intro {
+    flex-direction: column; /* Repasse l'image au-dessus du texte sur mobile */
+    text-align: center;
+    gap: 30px;
+  }
 
-.hero-image img {
-  width: 250px;
-  border-radius: 50%;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-}
-
-.social-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.social-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background-color: var(--fond-element);
-  color: var(--texte-principal);
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.social-btn:hover {
-  border-color: var(--rose);
-  color: var(--rose-dark);
-  transform: scale(1.05);
+  .hero-description {
+    text-align: center; /* Le texte de description devient centré sur mobile */
+  }
 }
 </style>
