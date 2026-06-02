@@ -6,6 +6,7 @@
       <a href="#accueil">Accueil</a>
       <a href="#projets">Projets</a>
       <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
       <a href="#contact">Contact</a>
 
     </div>
