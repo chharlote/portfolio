@@ -18,7 +18,8 @@
               en Java / Spring Boot.<br>
               ▸ Développement et maintenance d’API REST et d’IHM. <br>
               ▸ Création d’un outil de génération de token en python. <br>
-              ▸ Travail en équipe SCRUM.</p>
+              ▸ Travail en équipe SCRUM.<br>
+              ▸ Logiciels utilisés : Git, IntellIJ, Postman</p>
           </div>
         </div>
 
@@ -43,7 +44,10 @@
             <span class="date">2023 - 2026</span>
             <h4>BUT Informatique</h4>
             <span class="place">IUT du Littoral de la Côte d'Opale - Calais</span>
-            <p> Parcours réalisation d'applications : conception, développement, validation.</p>
+            <p> ▸ Parcours réalisation d'applications : conception, développement, validation. <br>
+              ▸ Réalistation de projet seul ou en groupe.<br>
+              ▸ Apprentissage des langages : C, python, JAVA, Vue.js, PHP, Node.js, C++ <br>
+              ▸ Logiciels utilisés : Git, VisualStudioCode, Wamp</p>
           </div>
         </div>
 

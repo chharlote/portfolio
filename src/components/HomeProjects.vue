@@ -50,7 +50,7 @@ const projets = [
   {
     titre: "BioEchec VR",
     sousTitre: null,
-    image: new URL('../assets/img/swagger-tennis.png', import.meta.url).href,
+    image: new URL('../assets/img/jeurv.png', import.meta.url).href,
     imageAlt: "BioEchec VR",
     technologies: ["Unreal Engine 5", "Blueprint"],
     duree: "1 semaine",
@@ -78,7 +78,7 @@ const projets = [
       "Équilibrage du gameplay, optimisation de l'IA pour fluidifier le jeu",
       "Mise en place d'un suivi de projet avec Trello"
     ],
-    lien: "LIEN_GITHUB_OU_SITE" // TODO lien
+    lien: "https://github.com/chharlote/skyrift"
   },
   {
     titre: "API Tennis",
@@ -109,7 +109,7 @@ const projets = [
       "Conception du site web en une nuit",
       "Site cliquable afin de voir une similitude entre une maladie humaine et les conséquences de la pollution marine"
     ],
-    lien: "https://github.com/chharlote/api_tennis" // TODO METTRE LIEN
+    lien: "https://github.com/chharlote/oceanman"
   },
   {
     titre: "Création d'un CRUD complet",
