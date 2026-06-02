@@ -38,28 +38,28 @@ const groupedSkills = [
   {
     titre: "Actuellement concentrée sur:",
     competences: [
-      { nom: "Java", niveau: "Avancé", logo: "../../img/skills/java.png", couleur: "#f89820" },
-      { nom: "SpringBoot", niveau: "Débutant", logo: "../../public/img/skills/springboot.png", couleur: "#6db33f" },
-      { nom: "Vue.js", niveau: "Débutant", logo: "../../public/img/skills/vuejs.png", couleur: "#41b883" }
+      { nom: "Java", niveau: "Avancé", logo: "portfolio/img/skills/java.png", couleur: "#f89820" },
+      { nom: "SpringBoot", niveau: "Débutant", logo: "portfolio/public/img/skills/springboot.png", couleur: "#6db33f" },
+      { nom: "Vue.js", niveau: "Débutant", logo: "portfolio/public/img/skills/vuejs.png", couleur: "#41b883" }
     ]
   },
   {
     titre: "Compétences confirmées :",
     competences: [
-      { nom: "PostgreSQL", niveau: "Avancé", logo: "../../public/img/skills/postgresql.png", couleur: "#336791" },
-      { nom: "Python", niveau: "Intermédiaire", logo: "../../public/img/skills/python.webp", couleur: "#3776ab" },
-      { nom: "PHP", niveau: "Intermédiaire", logo: "../../public/img/skills/php_logo.png", couleur: "#777bb4" },
-      { nom: "Node.js", niveau: "Intermédiaire", logo: "../../public/img/skills/nodejs.png", couleur: "#68a063" },
-      { nom: "C", niveau: "Intermédiaire", logo: "../../public/img/skills/c_logo.png", couleur: "#a8b9cc" },
-      { nom: "HTML/CSS", niveau: "Avancé", logo: "../../public/img/skills/html.webp", couleur: "#e34f26" }
+      { nom: "PostgreSQL", niveau: "Avancé", logo: "portfolio/public/img/skills/postgresql.png", couleur: "#336791" },
+      { nom: "Python", niveau: "Intermédiaire", logo: "portfolio/public/img/skills/python.webp", couleur: "#3776ab" },
+      { nom: "PHP", niveau: "Intermédiaire", logo: "portfolio/public/img/skills/php_logo.png", couleur: "#777bb4" },
+      { nom: "Node.js", niveau: "Intermédiaire", logo: "portfolio/public/img/skills/nodejs.png", couleur: "#68a063" },
+      { nom: "C", niveau: "Intermédiaire", logo: "portfolio/public/img/skills/c_logo.png", couleur: "#a8b9cc" },
+      { nom: "HTML/CSS", niveau: "Avancé", logo: "portfolio/public/img/skills/html.webp", couleur: "#e34f26" }
 
     ]
   },
   {
     titre: "Outils & Pratiques :",
     competences: [
-      { nom: "Git", niveau: "Avancé", logo: "../../public/img/skills/git.png", couleur: "#f1502f" },
-      { nom: "Postman", niveau: "Intermédiaire", logo: "../../public/img/skills/postman.webp", couleur: "#ef5b25" }
+      { nom: "Git", niveau: "Avancé", logo: "portfolio/public/img/skills/git.png", couleur: "#f1502f" },
+      { nom: "Postman", niveau: "Intermédiaire", logo: "portfolio/public/img/skills/postman.webp", couleur: "#ef5b25" }
     ]
   }
 ];
