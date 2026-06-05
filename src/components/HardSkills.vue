@@ -31,6 +31,23 @@
 
     </div>
   </section>
+
+  <section id="soft-skills" class="skills-section">
+
+    <div class="skills-header">
+      <h2>Soft Skills</h2>
+      <p>Grâce à ma formation et à mon alternance, j'ai appris à mieux travailler en équipe, à communiquer efficacement et à m'adapter, des compétences que je continue de développer.</p>
+    </div>
+
+    <div class="soft-skills-grid">
+
+      <div class="soft-skill-card" v-for="(skill, index) in softSkills" :key="index">
+        <img :src="skill.image" :alt="`Illustration ${skill.nom}`" class="soft-skill-img">
+        <p class="soft-skill-name">{{ skill.nom }}</p>
+      </div>
+
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -62,6 +79,15 @@ const groupedSkills = [
       { nom: "Postman", niveau: "Intermédiaire", logo: new URL('/public/img/skills/postman.webp', import.meta.url).href, couleur: "#ef5b25" }
     ]
   }
+];
+
+const softSkills = [
+  { nom: "Chercheuse", image: new URL('/public/img/skills/recherche.png', import.meta.url).href },
+  { nom: "Organisée", image: new URL('/public/img/skills/orga.png', import.meta.url).href },
+  { nom: "Rigoureuse", image: new URL('/public/img/skills/rigoureux.png', import.meta.url).href },
+  { nom: "Adaptation facile à un nouvel environnement", image: new URL('/public/img/skills/adap.png', import.meta.url).href },
+  { nom: "Bonne gestion du temps", image: new URL('/public/img/skills/temps.png', import.meta.url).href },
+  { nom: "Bonne communication en équipe", image: new URL('/public/img/skills/equipe.png', import.meta.url).href }
 ];
 </script>
 
@@ -103,7 +129,7 @@ const groupedSkills = [
   color: var(--texte-secondaire, #a0a0a0);
   margin-bottom: 30px;
   font-weight: 500;
-  border-bottom: 1px solid rgba(255,255,255,0.1); /* Ligne subtile */
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-bottom: 10px;
   text-align: left;
 }
@@ -112,11 +138,9 @@ const groupedSkills = [
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  /* Centrer les logos sur les petits écrans, les aligner à gauche sur les grands */
   justify-content: flex-start;
 }
 
-/* Comportement responsive */
 @media (max-width: 768px) {
   .skills-grid {
     justify-content: center;
@@ -135,17 +159,17 @@ const groupedSkills = [
   transform: translateY(-5px);
 }
 
-/* L'anneau autour du logo inspiré de l'image 2 */
+
 .icon-ring {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border: 4px solid transparent; /* La couleur est injectée dynamiquement par le script */
+  border: 4px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.03); /* Léger fond pour faire ressortir le cercle */
+  background-color: rgba(255, 255, 255, 0.03);
   transition: all 0.3s ease;
 }
 
@@ -176,5 +200,46 @@ const groupedSkills = [
   font-size: 13px;
   font-weight: 500;
   opacity: 0.9;
+}
+
+.soft-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.soft-skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.soft-skill-img {
+  height: 130px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 25px;
+
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.soft-skill-name {
+  font-weight: 700;
+  color: var(--texte-principal);
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
 }
 </style>
