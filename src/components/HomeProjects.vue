@@ -85,7 +85,7 @@ const projets = [
     sousTitre: null,
     image: new URL('../assets/img/swagger-tennis.png', import.meta.url).href,
     imageAlt: "API Tennis",
-    technologies: ["Node.js", "TypeScript", "PostgreSQL"],
+    technologies: ["Node.js", "TypeScript", "PostgreSQL", "Prisma"],
     duree: "2 jours",
     equipe: 1,
     description: [
@@ -116,7 +116,7 @@ const projets = [
     sousTitre: "(Mission d'alternance)",
     image: new URL('../assets/img/crud.jpg', import.meta.url).href,
     imageAlt: "CRUD Java",
-    technologies: ["JAVA", "SPRINGBOOT", "JUNIT", "POSTMAN"],
+    technologies: ["Java", "SpringBoot", "Junit", "Postman"],
     duree: "1 semaine",
     equipe: 1,
     description: [
@@ -125,6 +125,37 @@ const projets = [
       "Respect des conventions de développement pour la qualité de code"
     ],
     lien: null
+  },
+  {
+    titre: "Création d’un site web en PHP",
+    sousTitre: null,
+    image: new URL('../assets/img/php.png', import.meta.url).href,
+    imageAlt: "Gestion PHP",
+    technologies: ["PHP", "PosgreSQL"],
+    duree: "1 semaine",
+    equipe: 1,
+    description: [
+      "Site pour la gestion de cours, comprend des étudiants, des enseignants et des cours et des matières",
+      "Conception de la base de données complète en PostgreSQL",
+      "Mise en place de routines et fonctions en PL/pgSQL",
+        "Liaison de la base de données au site en PHP"
+    ],
+    lien: "https://github.com/chharlote/gestion-cours-pgsql/tree/main"
+  },
+  {
+    titre: "Application de gestion d'image astronomique",
+    sousTitre: null,
+    image: new URL('../assets/img/astro.png', import.meta.url).href,
+    imageAlt: "SAE Astro",
+    technologies: ["Python", "Skyview"],
+    duree: "1 semaine",
+    equipe: 2,
+    description: [
+      "Mise en place d'outils infrarouge et de filter de couleur",
+      "Découverte et utilisation des fichiers d’images astronomiques (FIT et FITS)",
+      "Analyse de fichier et données d'images astronomique"
+    ],
+    lien: "https://github.com/chharlote/astro-image-viewer"
   }
 ];
 </script>
