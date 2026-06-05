@@ -112,6 +112,7 @@
   line-height: 1.6;
   color: var(--texte-secondaire);
   margin: 0;
+  text-align: justify;
 }
 
 .hero-actions {
