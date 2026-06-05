@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
     <div class="footer-content">
-      <p>© {{ currentYear }} Charlotte. Tous droits réservés.</p>
+      <p>© {{ currentYear }} Charlotte Germe. Tous droits réservés.</p>
       <p class="made-with">
-        Développé avec ❤️ et <a href="https://vuejs.org/" target="_blank">Vue.js</a>
+        Développé en <a href="https://vuejs.org/" target="_blank">Vue.js</a>
       </p>
     </div>
   </footer>

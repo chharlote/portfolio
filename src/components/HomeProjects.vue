@@ -145,7 +145,7 @@ const projets = [
   {
     titre: "Application de gestion d'image astronomique",
     sousTitre: null,
-    image: new URL('../assets/img/astro.png', import.meta.url).href,
+    image: new URL('../assets/img/astro_sae.png', import.meta.url).href,
     imageAlt: "SAE Astro",
     technologies: ["Python", "Skyview"],
     duree: "1 semaine",

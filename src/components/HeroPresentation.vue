@@ -37,7 +37,7 @@
           GitHub
         </a>
 
-        <a href="/cv_c_germe.pdf" target="_blank" class="social-btn">
+        <a href="portfolio/public/cv_c_germe.pdf" target="_blank" class="social-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
           Mon CV
         </a>
@@ -46,8 +46,6 @@
 
 
      <a href="#projets" class="btn"> Voir mes projets</a>
-
-
 
 
     </div>
@@ -61,11 +59,10 @@
   flex-direction: column;
   align-items: center;
   padding: 80px 20px;
-  max-width: 1000px; /* Un peu réduit pour que le texte ne soit pas trop étiré */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-/* --- 1. En-tête centré --- */
 .hero-header {
   text-align: center;
   margin-bottom: 50px;
@@ -86,13 +83,12 @@
   color: var(--texte-principal);
 }
 
-/* --- 2. Image et Description (Côte à côte) --- */
 .hero-intro {
   display: flex;
-  flex-direction: row; /* Aligne l'image et le texte horizontalement */
+  flex-direction: row;
   align-items: center;
-  gap: 50px; /* Espace entre l'image et le texte */
-  margin-bottom: 50px; /* Espace avant la suite */
+  gap: 50px;
+  margin-bottom: 50px;
 }
 
 .hero-image {
@@ -108,21 +104,20 @@
 
 .hero-description {
   max-width: 600px;
-  text-align: left; /* Le texte reste aligné à gauche pour la lecture */
+  text-align: left;
 }
 
 .hero-description p {
   font-size: 18px;
   line-height: 1.6;
   color: var(--texte-secondaire);
-  margin: 0; /* Enlève les marges par défaut pour un meilleur alignement */
+  margin: 0;
 }
 
-/* --- 3. Actions centrées (Boutons, Badges) --- */
 .hero-actions {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre tout le contenu de cette zone */
+  align-items: center;
   width: 100%;
 }
 
@@ -130,7 +125,7 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center; /* Centre les boutons sociaux */
+  justify-content: center;
   margin-bottom: 40px;
 }
 
@@ -138,17 +133,17 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center; /* Centre les boutons */
+  justify-content: center;
   margin-bottom: 40px;
 }
 
 .social-btn {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espace entre le logo SVG et le texte */
-  background-color: transparent; /* Fond transparent */
+  gap: 10px;
+  background-color: transparent;
   color: var(--rose);
-  border: 2px solid var(--rose); /* Bordure colorée */
+  border: 2px solid var(--rose);
   padding: 10px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -157,15 +152,13 @@
   transition: all 0.3s ease;
 }
 
-/* On s'assure que le SVG prend la couleur du texte */
 .social-btn svg {
   stroke: currentColor;
 }
 
-/* Le même effet de survol que sur les projets */
 .social-btn:hover {
   background-color: var(--rose);
-  color: white; /* Le texte et le logo deviennent blancs */
+  color: white;
   transform: scale(1.05);
 }
 
@@ -195,16 +188,15 @@
   transform: scale(1.05);
 }
 
-/* --- Responsive (Tablettes et Mobiles) --- */
 @media (max-width: 850px) {
   .hero-intro {
-    flex-direction: column; /* Repasse l'image au-dessus du texte sur mobile */
+    flex-direction: column;
     text-align: center;
     gap: 30px;
   }
 
   .hero-description {
-    text-align: center; /* Le texte de description devient centré sur mobile */
+    text-align: center;
   }
 }
 </style>

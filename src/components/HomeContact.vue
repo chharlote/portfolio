@@ -3,8 +3,7 @@
     <h2>Me contacter</h2>
 
     <p class="contact-text">
-      Une question, une proposition ou simplement envie de discuter code ? <br>
-      Remplissez ce formulaire et je vous répondrai dans les plus brefs délais.
+      Un projet ou une question ? N'hésitez pas à me contacter via ce formulaire, je vous répondrai rapidement.
     </p>
 
     <form @submit.prevent="envoyerMessage" class="contact-form">
