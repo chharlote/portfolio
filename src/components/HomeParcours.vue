@@ -65,17 +65,20 @@
     </div>
 
     <div class="cv-container">
-      <a href="../assets/cv_c_germe.pdf" target="_blank" class="btn-cv" download>
+      <a :href="lienCV" target="_blank" class="btn-cv" download>
         📄 Télécharger mon CV
       </a>
     </div>
   </section>
 </template>
 
+<script setup lang="ts">
+const lienCV = new URL('../assets/cv_c_germe.pdf', import.meta.url).href;
+</script>
 <style scoped>
 .parcours-section {
   padding: 80px 20px;
-  background-color: var(--fond-element); /* Fond blanc pour alterner avec le gris de l'accueil */
+  background-color: var(--fond-element);
   text-align: center;
 }
 
@@ -97,12 +100,12 @@
   gap: 60px;
   max-width: 1000px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Permet de passer les colonnes l'une sous l'autre sur téléphone */
+  flex-wrap: wrap;
 }
 
 .timeline {
   flex: 1;
-  min-width: 300px; /* Largeur minimum avant de passer à la ligne */
+  min-width: 300px;
   text-align: left;
 }
 
@@ -115,24 +118,23 @@
   gap: 10px;
 }
 
-/* --- La ligne du temps --- */
+
 .timeline-item {
   position: relative;
-  padding-left: 30px; /* Laisse de la place pour la ligne */
+  padding-left: 30px;
   margin-bottom: 40px;
-  border-left: 2px solid var(--rose); /* C'est ça la fameuse ligne verticale ! */
+  border-left: 2px solid var(--rose);
 }
 
-/* Le petit point sur la ligne */
 .timeline-dot {
   position: absolute;
-  left: -7px; /* Centre le point sur la ligne de 2px */
+  left: -7px;
   top: 0;
   width: 12px;
   height: 12px;
   background-color: var(--rose-dark);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--fond-element); /* Crée un espace blanc autour du point */
+  box-shadow: 0 0 0 4px var(--fond-element);
 }
 
 .timeline-content {
@@ -144,7 +146,7 @@
 }
 
 .timeline-content:hover {
-  transform: translateX(5px); /* Décale légèrement la boîte vers la droite au survol */
+  transform: translateX(5px);
 }
 
 .date {
@@ -174,7 +176,6 @@
   margin: 0;
 }
 
-/* --- Bouton CV --- */
 .cv-container {
   margin-top: 60px;
 }
